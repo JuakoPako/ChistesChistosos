@@ -51,5 +51,26 @@ namespace ChistesChistosos
                 this.BackColor = Color.White;
             }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form2 oForm2 = new Form2();
+            oForm2.tipoChiste = "mischistes";
+            oForm2.modoNoche = modoNoche;
+            oForm2.Show();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            string nuevoChiste = txtAgregar.Text;
+            Chistes.mischistes.Add(nuevoChiste);
+            MessageBox.Show("Chiste Agregado!");
+
+        }
     }
 }

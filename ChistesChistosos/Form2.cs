@@ -33,49 +33,52 @@ namespace ChistesChistosos
                 this.BackColor = Color.White;
                 lblChiste.ForeColor = Color.Black;
             }
-            string[] chistesBuenos = {
-                "¿Por qué los pájaros no usan Facebook? Porque ya tienen Twitter.",
-                "¿Qué le dijo un pez a otro? ¡Nada!",
-                "¿Cuál es el colmo de un jardinero? Que siempre lo dejen plantado.",
-                "¿Por qué los esqueletos no pelean entre ellos? Porque no tienen el valor.",
-                "¿Qué le dijo una pared a la otra? Nos vemos en la esquina."
-            };
-
-            string[] chistesMalos = {
-                "¿Por qué el libro de matemáticas se deprimió? Porque tenía demasiados problemas.",
-                "¿Qué le dijo un semáforo a otro? No me mires, me estoy cambiando.",
-                "¿Cuál es el colmo de un electricista? Que siempre lo dejen sin corriente.",
-                "¿Por qué los fantasmas no pueden mentir? Porque se les ve a través.",
-            };
 
             Random rnd = new Random();
+            List<string> lista;
 
             if (tipoChiste == "bueno")
             {
-                string chiste;
+                lista = Chistes.buenos; 
 
-                do
-                {
-                    int pos = rnd.Next(chistesBuenos.Length);
-                    chiste = chistesBuenos[pos];
-                } while (usados.Contains(chiste));
+            }
+            else if (tipoChiste == "malo")
+            {
+                lista = Chistes.malos; 
+                
 
-                usados.Add(chiste);
-                lblChiste.Text = chiste;
             }
             else
             {
-                string chiste;
-                
-                do
-                {
-                    int pos = rnd.Next(chistesMalos.Length);
-                    chiste = chistesMalos[pos];
-                } while (usados.Contains(chiste));
-
-                usados.Add(chiste);
-                lblChiste.Text = chiste;
+                lista = Chistes.mischistes;
             }
+
+
+            if (lista.Count == 0)
+            {
+                lblChiste.Text = "No hay chistes aun";
+                return;
+            }
+
+            if (usados.Count == lista.Count)
+            {
+                usados.Clear();
+            }
+
+            string chiste;
+
+            do
+            {
+                int pos = rnd.Next(lista.Count);
+                chiste = lista[pos];
+
+            } while (usados.Contains(chiste));
+
+            usados.Add(chiste);
+
+            lblChiste.Text = chiste;
+
+
         }
     }
 }
