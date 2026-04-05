@@ -28,31 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
+            lblChiste = new Label();
             SuspendLayout();
             // 
-            // button1
+            // lblChiste
             // 
-            button1.Location = new Point(353, 121);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 0;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
+            lblChiste.AutoSize = true;
+            lblChiste.Location = new Point(355, 168);
+            lblChiste.Name = "lblChiste";
+            lblChiste.Size = new Size(38, 15);
+            lblChiste.TabIndex = 1;
+            lblChiste.Text = "label1";
             // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(button1);
+            Controls.Add(lblChiste);
             Name = "Form2";
             Text = "Form2";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
-        private Button button1;
+        private Label lblChiste;
     }
 }
