@@ -12,6 +12,8 @@ namespace ChistesChistosos
         {
             btnSwitch.BackColor = Color.LightGray;
             btnSwitch.ForeColor = Color.Black;
+            BtnBueno.Visible = true;
+            BtnMalo.Visible = false;
         }
 
         private void btnBueno_Click(object sender, EventArgs e)
@@ -41,6 +43,9 @@ namespace ChistesChistosos
                 btnSwitch.Text = "ON";
 
                 this.BackColor = Color.FromArgb(40, 40, 40); // fondo oscuro
+
+                BtnBueno.Visible = false;
+                BtnMalo.Visible = true;
             }
             else
             {
@@ -49,6 +54,9 @@ namespace ChistesChistosos
                 btnSwitch.Text = "OFF";
 
                 this.BackColor = Color.White;
+
+                BtnBueno.Visible = true;
+                BtnMalo.Visible = false;
             }
         }
 

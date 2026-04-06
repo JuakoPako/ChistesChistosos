@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             btnSwitch = new Button();
-            button3 = new Button();
-            button4 = new Button();
-            button5 = new Button();
+            BtnBueno = new Button();
+            BtnMalo = new Button();
+            BtnMisChistes = new Button();
             lblAgregar = new Label();
             txtAgregar = new TextBox();
             btnAgregar = new Button();
@@ -47,35 +47,35 @@
             btnSwitch.UseVisualStyleBackColor = true;
             btnSwitch.Click += button1_Click;
             // 
-            // button3
+            // BtnBueno
             // 
-            button3.Location = new Point(350, 51);
-            button3.Name = "button3";
-            button3.Size = new Size(92, 23);
-            button3.TabIndex = 1;
-            button3.Text = "Chiste bueno";
-            button3.UseVisualStyleBackColor = true;
-            button3.Click += btnBueno_Click;
+            BtnBueno.Location = new Point(350, 51);
+            BtnBueno.Name = "BtnBueno";
+            BtnBueno.Size = new Size(92, 23);
+            BtnBueno.TabIndex = 1;
+            BtnBueno.Text = "Chiste bueno";
+            BtnBueno.UseVisualStyleBackColor = true;
+            BtnBueno.Click += btnBueno_Click;
             // 
-            // button4
+            // BtnMalo
             // 
-            button4.Location = new Point(350, 113);
-            button4.Name = "button4";
-            button4.Size = new Size(92, 23);
-            button4.TabIndex = 2;
-            button4.Text = "Chiste malo";
-            button4.UseVisualStyleBackColor = true;
-            button4.Click += btnMalo_Click;
+            BtnMalo.Location = new Point(350, 113);
+            BtnMalo.Name = "BtnMalo";
+            BtnMalo.Size = new Size(92, 23);
+            BtnMalo.TabIndex = 2;
+            BtnMalo.Text = "Chiste malo";
+            BtnMalo.UseVisualStyleBackColor = true;
+            BtnMalo.Click += btnMalo_Click;
             // 
-            // button5
+            // BtnMisChistes
             // 
-            button5.Location = new Point(350, 175);
-            button5.Name = "button5";
-            button5.Size = new Size(92, 23);
-            button5.TabIndex = 4;
-            button5.Text = "Mis Chistes";
-            button5.UseVisualStyleBackColor = true;
-            button5.Click += button3_Click;
+            BtnMisChistes.Location = new Point(350, 175);
+            BtnMisChistes.Name = "BtnMisChistes";
+            BtnMisChistes.Size = new Size(92, 23);
+            BtnMisChistes.TabIndex = 4;
+            BtnMisChistes.Text = "Mis Chistes";
+            BtnMisChistes.UseVisualStyleBackColor = true;
+            BtnMisChistes.Click += button3_Click;
             // 
             // lblAgregar
             // 
@@ -114,9 +114,9 @@
             Controls.Add(txtAgregar);
             Controls.Add(lblAgregar);
             Controls.Add(btnSwitch);
-            Controls.Add(button5);
-            Controls.Add(button4);
-            Controls.Add(button3);
+            Controls.Add(BtnMisChistes);
+            Controls.Add(BtnMalo);
+            Controls.Add(BtnBueno);
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
@@ -126,9 +126,9 @@
 
         #endregion
         private Button btnSwitch;
-        private Button button3;
-        private Button button4;
-        private Button button5;
+        private Button BtnBueno;
+        private Button BtnMalo;
+        private Button BtnMisChistes;
         private Label lblAgregar;
         private TextBox txtAgregar;
         private Button btnAgregar;
