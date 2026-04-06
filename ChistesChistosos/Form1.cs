@@ -8,6 +8,8 @@ namespace ChistesChistosos
             InitializeComponent();
         }
 
+        
+
         private void Form1_Load(object sender, EventArgs e)
         {
             btnSwitch.BackColor = Color.LightGray;
@@ -39,6 +41,8 @@ namespace ChistesChistosos
                 btnSwitch.BackColor = Color.FromArgb(0, 120, 215); // azul
                 btnSwitch.ForeColor = Color.White;
                 btnSwitch.Text = "ON";
+                lblAgregar.ForeColor = Color.White;
+                
 
                 this.BackColor = Color.FromArgb(40, 40, 40); // fondo oscuro
             }
