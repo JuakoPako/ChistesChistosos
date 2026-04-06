@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             lblChiste = new Label();
+            btnSalir2 = new Button();
             SuspendLayout();
             // 
             // lblChiste
@@ -40,11 +41,22 @@
             lblChiste.TabIndex = 1;
             lblChiste.Text = "label1";
             // 
+            // btnSalir2
+            // 
+            btnSalir2.Location = new Point(713, 415);
+            btnSalir2.Name = "btnSalir2";
+            btnSalir2.Size = new Size(75, 23);
+            btnSalir2.TabIndex = 9;
+            btnSalir2.Text = "Salir";
+            btnSalir2.UseVisualStyleBackColor = true;
+            btnSalir2.Click += btnSalir1_Click;
+            // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnSalir2);
             Controls.Add(lblChiste);
             Name = "Form2";
             Text = "Form2";
@@ -55,5 +67,6 @@
         #endregion
 
         private Label lblChiste;
+        private Button btnSalir2;
     }
 }

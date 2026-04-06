@@ -35,6 +35,7 @@
             lblAgregar = new Label();
             txtAgregar = new TextBox();
             btnAgregar = new Button();
+            btnSalir1 = new Button();
             SuspendLayout();
             // 
             // btnSwitch
@@ -105,11 +106,22 @@
             btnAgregar.UseVisualStyleBackColor = true;
             btnAgregar.Click += btnAgregar_Click;
             // 
+            // btnSalir1
+            // 
+            btnSalir1.Location = new Point(713, 415);
+            btnSalir1.Name = "btnSalir1";
+            btnSalir1.Size = new Size(75, 23);
+            btnSalir1.TabIndex = 8;
+            btnSalir1.Text = "Salir";
+            btnSalir1.UseVisualStyleBackColor = true;
+            btnSalir1.Click += button1_Click_1;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnSalir1);
             Controls.Add(btnAgregar);
             Controls.Add(txtAgregar);
             Controls.Add(lblAgregar);
@@ -132,5 +144,6 @@
         private Label lblAgregar;
         private TextBox txtAgregar;
         private Button btnAgregar;
+        private Button btnSalir1;
     }
 }

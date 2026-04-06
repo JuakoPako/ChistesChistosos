@@ -39,13 +39,13 @@ namespace ChistesChistosos
 
             if (tipoChiste == "bueno")
             {
-                lista = Chistes.buenos; 
+                lista = Chistes.buenos;
 
             }
             else if (tipoChiste == "malo")
             {
-                lista = Chistes.malos; 
-                
+                lista = Chistes.malos;
+
 
             }
             else
@@ -79,6 +79,11 @@ namespace ChistesChistosos
             lblChiste.Text = chiste;
 
 
+        }
+
+        private void btnSalir1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
