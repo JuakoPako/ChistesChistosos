@@ -6,9 +6,14 @@ namespace ChistesChistosos
         public Form1()
         {
             InitializeComponent();
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
         }
 
-        
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            
+            
+        }
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -44,7 +49,8 @@ namespace ChistesChistosos
                 btnSwitch.ForeColor = Color.White;
                 btnSwitch.Text = "ON";
                 lblAgregar.ForeColor = Color.White;
-                
+                pictureBox1.Image = Properties.Resources.hankenojado; 
+
 
                 this.BackColor = Color.FromArgb(40, 40, 40); // fondo oscuro
 
@@ -58,9 +64,12 @@ namespace ChistesChistosos
                 btnSwitch.Text = "OFF";
 
                 this.BackColor = Color.White;
+                lblAgregar.ForeColor = Color.Black;
+                pictureBox1.Image = Properties.Resources.hankfeliz;
 
                 BtnBueno.Visible = true;
                 BtnMalo.Visible = false;
+
             }
         }
 
@@ -89,5 +98,7 @@ namespace ChistesChistosos
         {
             this.Close();
         }
+
+
     }
 }

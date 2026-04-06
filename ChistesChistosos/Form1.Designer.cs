@@ -36,6 +36,8 @@
             txtAgregar = new TextBox();
             btnAgregar = new Button();
             btnSalir1 = new Button();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // btnSwitch
@@ -116,11 +118,22 @@
             btnSalir1.UseVisualStyleBackColor = true;
             btnSalir1.Click += button1_Click_1;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.hankfeliz;
+            pictureBox1.Location = new Point(53, 287);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(130, 121);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 9;
+            pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(pictureBox1);
             Controls.Add(btnSalir1);
             Controls.Add(btnAgregar);
             Controls.Add(txtAgregar);
@@ -132,6 +145,7 @@
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -145,5 +159,6 @@
         private TextBox txtAgregar;
         private Button btnAgregar;
         private Button btnSalir1;
+        private PictureBox pictureBox1;
     }
 }
