@@ -66,7 +66,7 @@
             BtnMalo.Name = "BtnMalo";
             BtnMalo.Size = new Size(92, 23);
             BtnMalo.TabIndex = 2;
-            BtnMalo.Text = "Chiste malo";
+            BtnMalo.Text = "Chiste negro";
             BtnMalo.UseVisualStyleBackColor = true;
             BtnMalo.Click += btnMalo_Click;
             // 
