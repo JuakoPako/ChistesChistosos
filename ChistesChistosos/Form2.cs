@@ -1,12 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Numerics;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ChistesChistosos
@@ -15,14 +9,20 @@ namespace ChistesChistosos
     {
         public bool modoNoche;
         public string tipoChiste;
+
+        List<string> disponibles;
         List<string> usados = new List<string>();
+        Random rnd = new Random();
+
         public Form2()
         {
             InitializeComponent();
             this.Load += Form2_Load;
         }
+
         private void Form2_Load(object sender, EventArgs e)
         {
+            
             if (modoNoche)
             {
                 this.BackColor = Color.Black;
@@ -34,51 +34,45 @@ namespace ChistesChistosos
                 lblChiste.ForeColor = Color.Black;
             }
 
-            Random rnd = new Random();
-            List<string> lista;
-
+            
             if (tipoChiste == "bueno")
-            {
-                lista = Chistes.buenos;
-
-            }
+                disponibles = new List<string>(Chistes.buenos);
             else if (tipoChiste == "malo")
-            {
-                lista = Chistes.malos;
-
-
-            }
+                disponibles = new List<string>(Chistes.malos);
             else
+                disponibles = new List<string>(Chistes.mischistes);
+
+            MostrarChiste();
+        }
+
+        private void MostrarChiste()
+        {
+            if (disponibles.Count == 0)
             {
-                lista = Chistes.mischistes;
+                
+                disponibles = new List<string>(usados);
+                usados.Clear();
             }
 
-
-            if (lista.Count == 0)
+            if (disponibles.Count == 0)
             {
                 lblChiste.Text = "No hay chistes aun";
                 return;
             }
 
-            if (usados.Count == lista.Count)
-            {
-                usados.Clear();
-            }
+            int pos = rnd.Next(disponibles.Count);
+            string chiste = disponibles[pos];
 
-            string chiste;
-
-            do
-            {
-                int pos = rnd.Next(lista.Count);
-                chiste = lista[pos];
-
-            } while (usados.Contains(chiste));
-
+            
+            disponibles.RemoveAt(pos);
             usados.Add(chiste);
 
             lblChiste.Text = chiste;
+        }
 
-
+        private void btnOtro_Click(object sender, EventArgs e)
+        {
+            MostrarChiste();
         }
 
         private void btnSalir1_Click(object sender, EventArgs e)
