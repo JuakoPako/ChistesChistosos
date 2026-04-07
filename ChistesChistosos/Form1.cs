@@ -11,8 +11,8 @@ namespace ChistesChistosos
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            
-            
+
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -49,7 +49,7 @@ namespace ChistesChistosos
                 btnSwitch.ForeColor = Color.White;
                 btnSwitch.Text = "ON";
                 lblAgregar.ForeColor = Color.White;
-                pictureBox1.Image = Properties.Resources.hankenojado; 
+                pictureBox1.Image = Properties.Resources.hankenojado;
 
 
                 this.BackColor = Color.FromArgb(40, 40, 40); // fondo oscuro
@@ -99,6 +99,9 @@ namespace ChistesChistosos
             this.Close();
         }
 
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
 
+        }
     }
 }

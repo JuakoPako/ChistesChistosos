@@ -52,7 +52,7 @@
             // 
             // BtnBueno
             // 
-            BtnBueno.Location = new Point(350, 51);
+            BtnBueno.Location = new Point(348, 102);
             BtnBueno.Name = "BtnBueno";
             BtnBueno.Size = new Size(92, 23);
             BtnBueno.TabIndex = 1;
@@ -62,7 +62,7 @@
             // 
             // BtnMalo
             // 
-            BtnMalo.Location = new Point(350, 113);
+            BtnMalo.Location = new Point(350, 102);
             BtnMalo.Name = "BtnMalo";
             BtnMalo.Size = new Size(92, 23);
             BtnMalo.TabIndex = 2;
@@ -127,6 +127,7 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 9;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click_1;
             // 
             // Form1
             // 

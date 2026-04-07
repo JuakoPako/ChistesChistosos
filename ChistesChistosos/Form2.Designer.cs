@@ -30,12 +30,14 @@
         {
             lblChiste = new Label();
             btnSalir2 = new Button();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // lblChiste
             // 
             lblChiste.AutoSize = true;
-            lblChiste.Location = new Point(355, 168);
+            lblChiste.Location = new Point(208, 151);
             lblChiste.Name = "lblChiste";
             lblChiste.Size = new Size(38, 15);
             lblChiste.TabIndex = 1;
@@ -51,15 +53,26 @@
             btnSalir2.UseVisualStyleBackColor = true;
             btnSalir2.Click += btnSalir1_Click;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.araberisa;
+            pictureBox1.Location = new Point(255, 239);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(226, 209);
+            pictureBox1.TabIndex = 10;
+            pictureBox1.TabStop = false;
+            // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(pictureBox1);
             Controls.Add(btnSalir2);
             Controls.Add(lblChiste);
             Name = "Form2";
             Text = "Form2";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -68,5 +81,6 @@
 
         private Label lblChiste;
         private Button btnSalir2;
+        private PictureBox pictureBox1;
     }
 }
