@@ -11,10 +11,10 @@ namespace ChistesChistosos
 
         public static List<string> buenos = new List<String>()
         {
-            "¿Por qué los pájaros no usan Facebook? Porque ya tienen Twitter.",
-            "¿Qué le dijo un pez a otro? ¡Nada!",
-            "¿Cuál es el colmo de un jardinero? Que siempre lo dejen plantado.",
-            "¿Por qué los esqueletos no pelean entre ellos? Porque no tienen el valor.",
+            "¿Había una vez un pez que quería ser locutor, salió al aire y se murió.",
+            "Sabías que detuvieron al rompecabezas? No!! Por qué? Lo pillaron armado",
+            "¿Cuál es la diferencia entre el papel higiénico y el boxeador? El boxeador te golpea... El papel te saca la mierda.",
+            "Por qué la hormiga no cruzó la calle? Porque estaba el hormigon caliente😬",
             "¿Qué le dijo una pared a la otra? Nos vemos en la esquina.",
             "¿Qué hace una abeja en el gimnasio? ¡Zum-ba!",
             "¿Por qué el café fue a la policía? Porque lo asaltaron.",
@@ -38,12 +38,12 @@ namespace ChistesChistosos
         };
         public static List<string> malos = new List<String>()
         {
-            "Chistes de humor negro",
             "¿Por qué los enanos salen riendo del bosque? Porque el pasto les hace cosquillas en los cocos.",
             "¿Cual es el mejor condon? ¿Cual? El arigato ¿Por qué? PQ GOSAIMAS",
             "Cuál es la parte más dura de un vegetal? La silla de ruedas",
-            ""
-            
+            "Hay un doctor y un paciente: El doctor le dice -tiene que dejar de masturbarse. El paciente le pregunta: ¿por qué doctor? Y el doctor le responde pa poder examinarlo.",
+            "Por qué la gallina cruzó la calle? Pa culiarse a un gato."
+
 
 
 
