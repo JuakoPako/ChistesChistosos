@@ -15,7 +15,7 @@ namespace ChistesChistosos
             "Sabías que detuvieron al rompecabezas? No!! Por qué? Lo pillaron armado",
             "¿Cuál es la diferencia entre el papel higiénico y el boxeador? El boxeador te golpea... El papel te saca la mierda.",
             "Por qué la hormiga no cruzó la calle? Porque estaba el hormigon caliente😬",
-            "¿Qué le dijo una pared a la otra? Nos vemos en la esquina.",
+            "Doctor sabe que me toco la cabeza y me duele, me toco la pierna y me duele, me toco la wata y me duele, ¿qué tengo? el dedo roto",
             "¿Qué hace una abeja en el gimnasio? ¡Zum-ba!",
             "¿Por qué el café fue a la policía? Porque lo asaltaron.",
             "¿Qué le dice un jardinero a otro? Disfrutemos mientras podamos.",
@@ -42,7 +42,11 @@ namespace ChistesChistosos
             "¿Cual es el mejor condon? ¿Cual? El arigato ¿Por qué? PQ GOSAIMAS",
             "Cuál es la parte más dura de un vegetal? La silla de ruedas",
             "Hay un doctor y un paciente: El doctor le dice -tiene que dejar de masturbarse. El paciente le pregunta: ¿por qué doctor? Y el doctor le responde pa poder examinarlo.",
-            "Por qué la gallina cruzó la calle? Pa culiarse a un gato."
+            "Por qué la gallina cruzó la calle? Pa culiarse a un gato.",
+            "Cual es el ave nacional de de siria? Un dron americano.",
+            "Por qué estados unidos no va al mundial de ajedrez? Porque perdieron las torres.",
+            ""
+
 
 
 
